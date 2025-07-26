@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Encryption/Decryption Tool</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Simple Encryption/Decryption Tool</h1>
+
+    <label for="inputText">Enter Text:</label>
+    <textarea id="inputText" rows="4" placeholder="Type your message here..."></textarea>
+
+    <label for="shift">Shift (Key):</label>
+    <input type="number" id="shift" value="3" min="1" max="25" />
+
+    <div class="buttons">
+      <button id="encryptBtn">Encrypt</button>
+      <button id="decryptBtn">Decrypt</button>
+      <button id="clearBtn">Clear</button>
+    </div>
+
+    <label for="outputText">Result:</label>
+    <textarea id="outputText" rows="4" readonly></textarea>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
